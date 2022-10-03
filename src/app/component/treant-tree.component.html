@@ -1,9 +1,44 @@
-<div class="Treant">
-  <div class="chart" id="treant-id" #treeDiv>
-    <ng-template #node let-item>
-      <div id="{{ item.key }}">Technology {{item.name}}</div>
-    </ng-template>
+<div>
+  <div class="chart" id="{{ this.type }}">
+    <ng-container #treeDiv></ng-container>
   </div>
 </div>
+
+<ng-template #node let-item let-data="data">
+  <div id="{{ data.key }}" (click)="onClick(item)">
+    <div class="icon lozad" [attr.data-background-image]="'/assets/img/' + data.key +'.png'"></div>
+    <p class="node-name" title="{{data.name}}">{{data.name}}</p>
+    <p class="node-title">
+      {{ data.category }} -
+      <span class="tier tier-{{data.tier}}" *ngIf="data.tier > 0">Tier {{data.tier}}</span>
+      <span class="tier tier-0" *ngIf="data.tier == 0">Starting</span>
+    </p>
+    <p class="node-desc">
+      <ng-container *ngIf="data.tier > 0">
+        Cost: <span class="{{data.area}}-research">{{data.cost}}, Weight: {{data.base_weight}}</span>
+      </ng-container>
+    </p>
+    <p class="node-desc" style="color:yellow">
+      <ng-container *ngIf="data.is_gestalt === true">
+        <img src="/assets/icons/yes.png"/><img src="/assets/icons/ethic_gestalt_consciousness.png"/>
+      </ng-container>
+      <ng-container *ngIf="data.is_gestalt === false">
+        <img src="/assets/icons/no.png"/><img src="/assets/icons/ethic_gestalt_consciousness.png"/>
+      </ng-container>
+      <ng-container *ngIf="data.is_machine_empire === true">
+        <img src="/assets/icons/yes.png"/><img src="/assets/icons/auth_machine_intelligence.png"/>
+      </ng-container>
+      <ng-container *ngIf="data.is_machine_empire === false">
+        <img src="/assets/icons/no.png"/><img src="/assets/icons/auth_machine_intelligence.png"/>
+        <ng-container *ngIf="data.is_drive_assimilator === true">
+          <img src="/assets/icons/yes.png"/><img src="/assets/icons/civic_machine_assimilator.png"/>
+        </ng-container>
+        <ng-container *ngIf="data.is_rogue_servitor === true">
+          <img src="/assets/icons/yes.png"/><img src="/assets/icons/civic_machine_servitor.png"/>
+        </ng-container>
+      </ng-container>
+    </p>
+  </div>
+</ng-template>
 
 

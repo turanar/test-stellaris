@@ -1,16 +1,10 @@
-import {
-  Component, ComponentFactoryResolver, ElementRef, EmbeddedViewRef,
-  Input,
-  OnChanges,
-  OnInit,
-  SimpleChanges,
-  TemplateRef,
-  ViewChild, ViewContainerRef,
-  ViewEncapsulation,
-} from "@angular/core";
+import {Component, Input, OnInit, TemplateRef, ViewChild, ViewContainerRef, ViewEncapsulation,} from "@angular/core";
+
 import {TechnologyService} from "../service/technology.service";
+import {Config} from "src/app/config/config";
 
 declare var Treant: any;
+declare var lozad: any;
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -20,18 +14,20 @@ declare var Treant: any;
 })
 export class TreantTree implements OnInit {
   @ViewChild('node') public node: TemplateRef<any>;
-  @ViewChild('treeDiv') public treantElement: ElementRef;
+  @ViewChild('treeDiv', {read: ViewContainerRef}) viewRef: ViewContainerRef
 
-  test: EmbeddedViewRef<any>[] = [];
+  @Input() type: string;
+  config: Config;
 
-  constructor(private techService : TechnologyService, private viewRef : ViewContainerRef) {
+  constructor(private techService : TechnologyService) {
+
+  }
+
+  onClick(event: any) {
 
   }
 
   private init(tree: any) {
-    tree.HTMLid = tree.key;
-    tree.text = {name: tree.name};
-    tree.innerHTML = `<div style='width:250px;height: 70px;border: 1px solid black'>${tree.name}</div>`
     tree.meta = tree;
     if(tree.children) {
       tree.children.forEach((child:any) => this.init(child));
@@ -39,41 +35,33 @@ export class TreantTree implements OnInit {
   }
 
   ngOnInit(): void {
-    this.techService.physics().subscribe(r => {
+    this.config = new Config();
+    this.config.callback = {
+      onCreateNode: this.createNode(),
+      onTreeLoaded: this.onTreeLoaded()
+    };
+
+    this.techService.fetch(this.type).subscribe(r => {
       this.init(r);
-       Treant({chart: this.config, nodeStructure: r.children[0]});
+      this.config.container = '#' + this.type;
+      Treant({chart: this.config, nodeStructure: r.children[0]});
     })
   }
 
   createNode() {
-    return (node: any) => {
-      console.log(node);
+    return (treeNode: any, element: any) => {
+      let viewRef = this.viewRef.createEmbeddedView(this.node, {$implicit: treeNode, data: treeNode.meta});
+      let e = viewRef.rootNodes[0];
+      e.className = 'node ' + treeNode.meta.area;
+      return e;
     }
   }
 
   onTreeLoaded() {
-    return (test: any) => {
-      console.log(test.getTree());
+    return (tree: any) => {
+      const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      observer.observe();
     }
   }
-  private config: any  =  {
-    container: '#treant-id',
-    rootOrientation: 'WEST', // NORTH || EAST || WEST || SOUTH
-    nodeAlign: 'TOP',
-    hideRootNode: true,
-    siblingSeparation: 20,
-    subTeeSeparation:  20,
-    scrollbar: 'resize',
-    connectors: {
-      type: 'step'
-    },
-    node: {
-      HTMLclass: 'tech',
-      collapsable: false
-    },
-    callback: {
-      onCreateNode: this.createNode(),
-      onTreeLoaded: this.onTreeLoaded()
-    }
-  };
+
 }

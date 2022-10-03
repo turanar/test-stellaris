@@ -6,8 +6,8 @@ import {Observable} from "rxjs";
 export class TechnologyService {
   constructor(private httpClient: HttpClient) {}
 
-  public physics(): Observable<any> {
-    return this.httpClient.get('/assets/physics.json');
+  public fetch(type: string): Observable<any> {
+    return this.httpClient.get(`/assets/${type}.json`);
   }
 }
 

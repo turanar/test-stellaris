@@ -72,7 +72,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
               ],
               "potential": [],
               "children": [
@@ -102,7 +102,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [],
                   "children": [],
@@ -164,7 +164,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                 "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
               ],
               "potential": [],
@@ -199,7 +199,7 @@
                     "(×<b style='color:lime'>2.0</b>) Has Technology: Destroyers",
                     "(×<b style='color:lime'>2.0</b>) Has Technology: Cruisers",
                     "(×<b style='color:lime'>2.0</b>) Has Technology: Battleships",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -229,7 +229,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                       ],
                       "potential": [],
                       "children": [],
@@ -268,7 +268,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                       ],
                       "potential": [],
                       "children": [
@@ -307,7 +307,7 @@
                             "(×<b style='color:red'>0.0</b>) Has policy AI Outlawed",
                             "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                             "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_combat_computers_3}",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert<br/>    •   Skill level is greater than 2"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert<br/>    •   Skill level is greater than 2"
                           ],
                           "potential": [
                             "Does NOT have Gestalt Consciousness Ethic"
@@ -346,7 +346,7 @@
                             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Research Leader (Physics): <br/>\t    •   Is Computing Expert<br/>    •   Research Leader (Physics): <br/>\t    •   Is Curator<br/>    •   Research Leader (Physics): <br/>\t    •   Is Maniacal",
                             "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                             "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_combat_computers_autonomous}",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert<br/>    •   Skill level is greater than 2"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert<br/>    •   Skill level is greater than 2"
                           ],
                           "potential": [
                             "Has Gestalt Consciousness Ethic"
@@ -390,7 +390,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -425,7 +425,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                       ],
                       "potential": [],
                       "children": [],
@@ -467,7 +467,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [
                     "One must be true\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Government Civic: Rogue Servitor"
@@ -509,7 +509,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                       ],
                       "potential": [
                         "One must be true\n    •   Does NOT have Gestalt Consciousness Ethic\n    •   Has Government Civic: Rogue Servitor"
@@ -550,7 +550,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -581,7 +581,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                         "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
                       ],
                       "potential": [
@@ -619,7 +619,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                         "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
                       ],
                       "potential": [
@@ -704,7 +704,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                 "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
               ],
               "potential": [],
@@ -742,7 +742,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.25</b>) All must be false<br/>    •   Research Leader (Physics): <br/>\t    •   Is Computing Expert<br/>    •   Research Leader (Physics): <br/>\t    •   Is Curator",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                     "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
                   ],
                   "potential": [],
@@ -781,7 +781,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                     "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
                   ],
                   "potential": [],
@@ -816,7 +816,7 @@
           "tier": 1,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
           ],
           "potential": [],
           "children": [
@@ -846,7 +846,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
               ],
               "potential": [],
               "children": [
@@ -876,7 +876,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -906,7 +906,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                       ],
                       "potential": [],
                       "children": [
@@ -936,7 +936,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                           ],
                           "potential": [],
                           "children": [],
@@ -983,7 +983,7 @@
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 15",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 20",
-            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
             "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
           ],
           "potential": [],
@@ -1019,7 +1019,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                 "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Is AI<br/>    •   Has the first_spynetwork country flag"
               ],
               "potential": [],
@@ -1055,7 +1055,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                     "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Is AI<br/>    •   Has the first_spynetwork country flag"
                   ],
                   "potential": [],
@@ -1091,7 +1091,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Is AI<br/>    •   Has the first_spynetwork country flag"
                       ],
                       "potential": [],
@@ -1141,7 +1141,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                 "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Is AI<br/>    •   Has the first_spynetwork country flag"
               ],
               "potential": [],
@@ -1177,7 +1177,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                     "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Is AI<br/>    •   Has the first_spynetwork country flag"
                   ],
                   "potential": [],
@@ -1213,7 +1213,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Is AI<br/>    •   Has the first_spynetwork country flag"
                       ],
                       "potential": [],
@@ -1259,7 +1259,7 @@
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                 "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                 "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
               ],
               "potential": [],
@@ -1294,7 +1294,7 @@
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 30",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 35",
                     "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 40",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
                     "(×<b style='color:lime'>1.5</b>) Is Subject Type : scholarium"
                   ],
                   "potential": [],
@@ -1362,7 +1362,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
-            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
           ],
           "potential": [],
           "children": [
@@ -1394,7 +1394,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
               ],
               "potential": [],
               "children": [
@@ -1425,7 +1425,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -1500,7 +1500,7 @@
                 "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                 "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                 "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_experimental_subspace_navigation}",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
               ],
               "potential": [],
               "children": [],
@@ -1558,7 +1558,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
               ],
               "potential": [],
               "children": [
@@ -1590,7 +1590,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -1622,7 +1622,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
                       ],
                       "potential": [],
                       "children": [],
@@ -1696,7 +1696,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Prosperity Traditions Tradition",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
                 "(×<b style='color:lime'>1.5</b>) Is Subject Type : prospectorium"
               ],
               "potential": [],
@@ -1735,7 +1735,7 @@
                   "weight_modifiers": [
                     "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has Technology: Exotic Gas Extraction<br/>    •   Has Technology: Exotic Gas Refining<br/>    •   Has the has_market_access country flag",
                     "(×<b style='color:lime'>2.0</b>) Has Prosperity Traditions Tradition",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
                     "(×<b style='color:lime'>1.5</b>) Is Subject Type : prospectorium"
                   ],
                   "potential": [],
@@ -1802,7 +1802,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
                 "(×<b style='color:lime'>1.5</b>) Is Subject Type : bulwark"
               ],
               "potential": [],
@@ -1835,7 +1835,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
                     "(×<b style='color:lime'>1.5</b>) Is Subject Type : bulwark"
                   ],
                   "potential": [],
@@ -1868,7 +1868,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
                         "(×<b style='color:lime'>1.5</b>) Is Subject Type : bulwark"
                       ],
                       "potential": [],
@@ -1901,7 +1901,7 @@
                             }
                           ],
                           "weight_modifiers": [
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert",
                             "(×<b style='color:lime'>1.5</b>) Is Subject Type : bulwark"
                           ],
                           "potential": [],
@@ -2006,7 +2006,7 @@
                         }
                       ],
                       "weight_modifiers": [
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
                       ],
                       "potential": [],
                       "children": [],
@@ -2042,7 +2042,7 @@
                         "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Research Leader (Physics): <br/>\t    •   Is Field Manipulation Expert<br/>    •   Research Leader (Physics): <br/>\t    •   Is Curator<br/>    •   Research Leader (Physics): <br/>\t    •   Is Spark of Genius",
                         "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                         "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_planetary_shield_generator}",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Field Manipulation Expert"
                       ],
                       "potential": [],
                       "children": [],
@@ -2114,7 +2114,7 @@
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
               ],
               "potential": [],
               "children": [
@@ -2148,7 +2148,7 @@
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -2182,7 +2182,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                       ],
                       "potential": [],
                       "children": [
@@ -2215,7 +2215,7 @@
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
                             "(×<b style='color:red'>0.5</b>) Does NOT have Technology: Red Lasers",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                           ],
                           "potential": [],
                           "children": [
@@ -2247,7 +2247,7 @@
                               "weight_modifiers": [
                                 "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                               ],
                               "potential": [],
                               "children": [],
@@ -2288,7 +2288,7 @@
                           "weight_modifiers": [
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                           ],
                           "potential": [],
                           "children": [],
@@ -2328,7 +2328,7 @@
                           "weight_modifiers": [
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                           ],
                           "potential": [],
                           "children": [
@@ -2365,7 +2365,7 @@
                               "weight_modifiers": [
                                 "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                               ],
                               "potential": [],
                               "children": [],
@@ -2444,7 +2444,7 @@
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
                     "(×<b style='color:red'>0.5</b>) Does NOT have Technology: Red Lasers"
                   ],
                   "potential": [],
@@ -2478,7 +2478,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                       ],
                       "potential": [],
                       "children": [
@@ -2511,7 +2511,7 @@
                           "weight_modifiers": [
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                           ],
                           "potential": [],
                           "children": [
@@ -2548,7 +2548,7 @@
                               "weight_modifiers": [
                                 "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                                 "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                               ],
                               "potential": [],
                               "children": [
@@ -2580,7 +2580,7 @@
                                   "weight_modifiers": [
                                     "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                                   ],
                                   "potential": [],
                                   "children": [],
@@ -2633,7 +2633,7 @@
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                     "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
                     "(×<b style='color:red'>0.5</b>) Does NOT have Technology: Red Lasers"
                   ],
                   "potential": [],
@@ -2668,7 +2668,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                         "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                       ],
                       "potential": [],
                       "children": [
@@ -2702,7 +2702,7 @@
                           "weight_modifiers": [
                             "(×<b style='color:lime'>1.25</b>) Has Militarist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Fanatic Militarist Ethic",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                           ],
                           "potential": [],
                           "children": [],
@@ -2804,7 +2804,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>2.0</b>) Has Technology: Destroyers",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
               ],
               "potential": [],
               "children": [
@@ -2835,7 +2835,7 @@
                   ],
                   "weight_modifiers": [
                     "(×<b style='color:lime'>2.0</b>) Has Technology: Cruisers",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -2866,7 +2866,7 @@
                       ],
                       "weight_modifiers": [
                         "(×<b style='color:lime'>2.0</b>) Has Technology: Battleships",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                       ],
                       "potential": [],
                       "children": [
@@ -2897,7 +2897,7 @@
                           ],
                           "weight_modifiers": [
                             "(×<b style='color:lime'>2.0</b>) Has Technology: Battleships",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                           ],
                           "potential": [],
                           "children": [
@@ -3044,7 +3044,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
               ],
               "potential": [],
               "children": [
@@ -3079,7 +3079,7 @@
                     }
                   ],
                   "weight_modifiers": [
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                   ],
                   "potential": [],
                   "children": [],
@@ -3144,7 +3144,7 @@
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                 "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
               ],
               "potential": [],
               "children": [
@@ -3177,7 +3177,7 @@
                   "weight_modifiers": [
                     "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
                   ],
                   "potential": [],
                   "children": [
@@ -3209,7 +3209,7 @@
                       "weight_modifiers": [
                         "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Research Leader (Physics): <br/>\t    •   Is Particles Expert<br/>    •   Research Leader (Physics): <br/>\t    •   Is Curator<br/>    •   Research Leader (Physics): <br/>\t    •   Is Spark of Genius<br/>    •   Research Leader (Physics): <br/>\t    •   Is Maniacal",
                         "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
-                        "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+                        "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
                         "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                         "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                         "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_gateway_activation}",
@@ -3251,7 +3251,7 @@
                           "weight_modifiers": [
                             "(×<b style='color:red'>0.1</b>) All must be false<br/>    •   Research Leader (Physics): <br/>\t    •   Is Particles Expert<br/>    •   Research Leader (Physics): <br/>\t    •   Is Curator<br/>    •   Research Leader (Physics): <br/>\t    •   Is Spark of Genius<br/>    •   Research Leader (Physics): <br/>\t    •   Is Maniacal",
                             "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
-                            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+                            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
                             "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                             "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                             "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_gateway_construction}",
@@ -3301,7 +3301,7 @@
                     "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Research Leader (Physics): <br/>\t    •   Is Particles Expert<br/>    •   Research Leader (Physics): <br/>\t    •   Is Curator<br/>    •   Research Leader (Physics): <br/>\t    •   Is Spark of Genius<br/>    •   Research Leader (Physics): <br/>\t    •   Is Maniacal<br/>    •   Has encountered a bypass_relay_bypass",
                     "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   has_megastructure=hyper_relay<br/>    •   has_megastructure=hyper_relay_ruined<br/>    •   has_megastructure=hyper_relay_restored",
                     "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
                     "(×<b style='color:lime'>1.5</b>) Has encountered a bypass_relay_bypass",
                     "(×<b style='color:lime'>1.25</b>) Has Technology: Speculative Hyperlane Breaching",
                     "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
@@ -3346,7 +3346,7 @@
                     "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                     "(×<b style='color:lime'>1.5</b>) Has Grasp the Void Ascension Perk",
                     "(×<b style='color:lime'>2.0</b>) Federation : <br/>    •   has_federation_perk=rare_tech_boost<br/>    •   any_member={has_technology=tech_wormhole_stabilization}",
-                    "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+                    "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
                     "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Has encountered a Natural Wormhole<br/>    •   Any Country Relation<br/>\t    •   Is of country type: default<br/>\t    •   Has communication with our Empire<br/>\t    •   Has Technology: Wormhole Stabilization",
                     "(×<b style='color:lime'>4.0</b>) Controls a system with a Natural Wormhole"
                   ],
@@ -3387,7 +3387,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Has Unyielding Traditions Tradition",
-                "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+                "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
               ],
               "potential": [],
               "children": [],
@@ -3418,7 +3418,7 @@
           "tier": 1,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
+            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Computing Expert",
             "(×<b style='color:lime'>1.25</b>) Has Discovery Traditions Tradition",
             "(×<b style='color:red'>0.0</b>) Number of years since game start is lower than 5",
             "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 10",
@@ -3574,7 +3574,7 @@
           "tier": 2,
           "prerequisites_names": [],
           "weight_modifiers": [
-            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
+            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert",
             "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Dust Caverns<br/>\t\t    •   Has deposit Dust Desert<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £volatile_motes£ §Y+1§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+2§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+3§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+4§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+5§!"
           ],
           "potential": [],
@@ -3602,7 +3602,7 @@
           "prerequisites_names": [],
           "weight_modifiers": [
             "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Dust Caverns<br/>\t\t    •   Has deposit Dust Desert<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £volatile_motes£ §Y+1§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+2§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+3§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+4§!<br/>\t\t    •   Has deposit £volatile_motes£ §Y+5§!",
-            "(×<b style='color:lime'>1.25</b> / ×<b style='color:lime'>2.5</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
+            "(×<b style='color:lime'>1.5</b> / ×<b style='color:lime'>3</b> for Technocracy Civic)<br/> Research Leader (Physics): <br/>    •   Is Particles Expert"
           ],
           "potential": [],
           "children": [],

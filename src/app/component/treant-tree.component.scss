@@ -28,16 +28,25 @@
 .node.physics {
   border-color: #4396E2;
   background-image: url("../../assets/css/tech_bg_physics.png");
+  &.active {
+    background-color: #0F2233;
+  }
 }
 
 .node.society {
   border-color: #5ACA9C;
   background-image: url("../../assets/css/tech_bg_society.png");
+  &.active {
+    background-color: #173327;
+  }
 }
 
 .node.engineering {
   border-color: #E29C43;
   background-image: url('../../assets/css/tech_bg_engineering.png');
+  &.active {
+    background-color: #33230F;
+  }
 }
 
 .node.dangerous {

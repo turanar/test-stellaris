@@ -2,6 +2,7 @@ import {Component, Input, OnInit, TemplateRef, ViewChild, ViewContainerRef, View
 
 import {TechnologyService} from "../service/technology.service";
 import {Config} from "src/app/config/config";
+import {TreeNode} from "src/app/config/tree-node";
 
 declare var Treant: any;
 declare var lozad: any;
@@ -18,19 +19,35 @@ export class TreantTree implements OnInit {
 
   @Input() type: string;
   config: Config;
+  treant: any;
 
-  constructor(private techService : TechnologyService) {
+  constructor(private techService : TechnologyService) { }
 
+  find = (index: number): TreeNode => this.treant.tree.nodeDB.db[index];
+  disable = (node: TreeNode) => {
+    node.children.map(this.find).forEach((n: TreeNode)=> {
+      n.meta.active = false;
+      this.disable(n);
+    })
   }
 
-  onClick(event: any) {
+  onClick(event: TreeNode) {
+    if(event.meta.tier < 1) return;
+    event.meta.active = !event.meta.active;
 
+    let parent= event.parent();
+    while(parent !== undefined && event.meta.active) {
+      parent.meta.active = true;
+      parent = parent.parent();
+    }
+
+    if(!event.meta.active) this.disable(event);
   }
 
-  private init(tree: any) {
-    tree.meta = tree;
-    if(tree.children) {
-      tree.children.forEach((child:any) => this.init(child));
+  private init(node: TreeNode) {
+    node.meta = node;
+    if(node.children) {
+      node.children.forEach((child:any) => this.init(child));
     }
   }
 
@@ -44,12 +61,12 @@ export class TreantTree implements OnInit {
     this.techService.fetch(this.type).subscribe(r => {
       this.init(r);
       this.config.container = '#' + this.type;
-      Treant({chart: this.config, nodeStructure: r.children[0]});
+      this.treant = new Treant({chart: this.config, nodeStructure: r.children[0]});
     })
   }
 
   createNode() {
-    return (treeNode: any, element: any) => {
+    return (treeNode: TreeNode) => {
       let viewRef = this.viewRef.createEmbeddedView(this.node, {$implicit: treeNode, data: treeNode.meta});
       let e = viewRef.rootNodes[0];
       e.className = 'node ' + treeNode.meta.area;

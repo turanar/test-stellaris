@@ -5,7 +5,7 @@
 </div>
 
 <ng-template #node let-item let-data="data">
-  <div id="{{ data.key }}" (click)="onClick(item)" [class.active]="data.tier < 1">
+  <div id="{{ data.key }}" [class.active]="data.tier < 1 || data.active">
     <div class="icon lozad" [attr.data-background-image]="'/assets/img/' + data.key +'.png'"></div>
     <p class="node-name" title="{{data.name}}">{{data.name}}</p>
     <p class="node-title">
@@ -38,6 +38,7 @@
         </ng-container>
       </ng-container>
     </p>
+    <div class="node-status" (click)="onClick(item)"></div>
   </div>
 </ng-template>
 

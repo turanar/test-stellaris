@@ -53,6 +53,21 @@
   background-image: url("../../assets/css/tech_bg_dangerous.png");
 }
 
+div.node-status {
+  border: 1px solid #333;
+  margin: 1px;
+  position: inherit;
+  float: right;
+  bottom: 0;
+  right: 0;
+  height: 21px;
+  width: 21px;
+}
+
+.active .node-status {
+  background-image: url("../../assets/icons/yes.png");
+}
+
 p.node-name {
   height: 20px;
   font-weight: bold;

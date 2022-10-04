@@ -55,21 +55,6 @@
   }
 }
 
-div.node-status {
-  border: 1px solid #333;
-  margin: 1px;
-  position: inherit;
-  float: right;
-  bottom: 0;
-  right: 0;
-  height: 21px;
-  width: 21px;
-}
-
-.active .node-status {
-  background-image: url("../../assets/icons/yes.png");
-}
-
 p.node-name {
   height: 20px;
   font-weight: bold;
@@ -78,7 +63,6 @@ p.node-name {
   overflow: hidden;
   white-space: nowrap;
   z-index: 2;
-  user-select: none;
 }
 
 div.icon {
@@ -92,20 +76,34 @@ div.icon {
   top: 4px;
 }
 
-p.node-title {
+p {
   user-select: none;
 }
 
 p.node-desc {
   margin-bottom: 2px;
-  user-select: none;
+
+  img {
+    height: 16px;
+    width: 16px;
+    margin-top: -2px;
+    margin-right: 3px;
+  }
 }
 
-p.node-desc img {
-  height: 16px;
-  width: 16px;
-  margin-top: -2px;
-  margin-right: 3px;
+div.node-status {
+  border: 1px solid #333;
+  margin: 1px;
+  position: inherit;
+  float: right;
+  bottom: 0;
+  right: 0;
+  height: 21px;
+  width: 21px;
+}
+
+.active div.node-status {
+  background-image: url("../../assets/icons/yes.png");
 }
 
 span.society-research::before {
@@ -131,29 +129,17 @@ span.physics-research::before {
 
 span.tier {
   font-weight: bold;
+  &.tier-0 { color: #9d9d9d; }
+  &.tier-1 { color: #ffffff; }
+  &.tier-2 { color: #1eff00; }
+  &.tier-3 { color: #45a9ff; }
+  &.tier-4 { color: #c380f1; }
+  &.tier-5 { color: #ff8000; }
 }
 
-span.tier-0 {
-  color: #9d9d9d;
+path {
+  stroke-width: 2;
+  &.society { stroke: #5ACA9C; }
+  &.engineering { stroke: #E29C43; }
+  &.physics { stroke: #4396E2; }
 }
-
-span.tier-1 {
-  color: #ffffff;
-}
-
-span.tier-2 {
-  color: #1eff00;
-}
-
-span.tier-3 {
-  color: #45a9ff;
-}
-
-span.tier-4 {
-  color: #c380f1;
-}
-
-span.tier-5 {
-  color: #ff8000;
-}
-

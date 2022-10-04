@@ -9,10 +9,7 @@ export class Config {
   subTeeSeparation:  number = 20
   scrollbar: string = 'resize'
   connectors: any = {
-    type: 'step',
-    style: {
-      stroke: 'white'
-    }
+    type: 'step'
   }
   node: any = {
     HTMLclass: 'tech',

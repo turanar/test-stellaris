@@ -1,5 +1,27 @@
-<div style="padding:20px;">
-  <tech-tree type="physics"></tech-tree>
-  <tech-tree type="society"></tech-tree>
-  <tech-tree type="engineering"></tech-tree>
+<ul class="menu">
+  <li [class.selected]="selected == 0" (click)="click(0)">
+    <a><h2>All <img src="/assets/icons/research_icon.png"></h2></a>
+  </li>
+  <li [class.selected]="selected == 1" (click)="click(1)">
+    <a><h2>Physics <img src="/assets/icons/physics_research.png"></h2></a>
+  </li>
+  <li [class.selected]="selected == 2" (click)="click(2)">
+    <a><h2>Society <img src="/assets/icons/society_research.png"></h2></a>
+  </li>
+  <li [class.selected]="selected == 3" (click)="click(3)">
+    <a><h2>Engineering <img src="/assets/icons/engineering_research.png"></h2></a>
+  </li>
+  <li style="margin: auto"></li>
+  <li style="margin-right: 15px">
+    <a>Version :
+      <select #v (change)="this.selected = 0;this.selectedVersion = v.value">
+        <option *ngFor="let version of versions" value="{{ version.route }}">{{ version.title }}</option>
+      </select>
+    </a>
+  </li>
+</ul>
+<div class="main">
+  <tech-tree type="physics" [class.hide]="selected!=0 && selected!=1" [version]="this.selectedVersion"></tech-tree>
+  <tech-tree type="society" [class.hide]="selected!=0 && selected!=2" [version]="this.selectedVersion"></tech-tree>
+  <tech-tree type="engineering" [class.hide]="selected!=0 && selected!=3" [version]="this.selectedVersion"></tech-tree>
 </div>

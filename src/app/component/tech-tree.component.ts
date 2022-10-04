@@ -1,4 +1,13 @@
-import {Component, Input, OnInit, TemplateRef, ViewChild, ViewContainerRef, ViewEncapsulation,} from "@angular/core";
+import {
+  Component, ElementRef,
+  Input,
+  OnChanges,
+  OnInit, SimpleChanges,
+  TemplateRef,
+  ViewChild,
+  ViewContainerRef,
+  ViewEncapsulation,
+} from "@angular/core";
 
 import {TechnologyService} from "../service/technology.service";
 import {Config} from "src/app/config/config";
@@ -7,6 +16,7 @@ import {Tech} from "../config/tech";
 
 declare var Treant: any;
 declare var lozad: any;
+declare var $: any;
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -14,13 +24,18 @@ declare var lozad: any;
   styleUrls: ['tech-tree.component.scss'],
   templateUrl: 'tech-tree.component.html'
 })
-export class TechTree implements OnInit {
+export class TechTree implements OnInit, OnChanges {
   @ViewChild('node') public node: TemplateRef<any>;
   @ViewChild('container', {read: ViewContainerRef}) view: ViewContainerRef
+  @ViewChild('parent') container: ElementRef;
 
   @Input() type: string;
+  @Input() version: string = 'cepheus-3.4.3';
+
   config: Config;
   treant: any;
+  observer: any;
+
   civics: any[] = [
     { value: (data: Tech) => data.is_gestalt, image: 'ethic_gestalt_consciousness'},
     { value: (data: Tech) => data.is_machine_empire, image: 'auth_machine_intelligence'},
@@ -32,10 +47,8 @@ export class TechTree implements OnInit {
 
   constructor(private techService : TechnologyService) { }
 
-  find = (index: number): TreeNode => this.treant.tree.nodeDB.db[index];
-
   visitChildren = (node: TreeNode, f: Function) => {
-    node.children.map(this.find).forEach(n => {
+    node.children.map(i => node.getTreeNodeDb().get(i)).forEach(n => {
       f.call(this,n); this.visitChildren(n, f);
     })
   };
@@ -52,11 +65,43 @@ export class TechTree implements OnInit {
     if(event.meta.active) this.visitParent(event, n => n.meta.active = true);
     // de-activate all children
     if(!event.meta.active) this.visitChildren(event, n => n.meta.active = false);
+    this.updatePath(event);
   }
 
-  private init(node: TreeNode) {
+  private changePathClass(node: TreeNode) {
+    let parent = node.parent();
+    if(node.connector) {
+      let path = node.connector.node
+      if (parent.meta.tier == 0 || parent.meta.active) path.setAttribute('class', this.type);
+      if (!parent.meta.active && parent.meta.tier>0) path.setAttribute('class', '');
+    }
+  }
+
+  private updatePath(node: TreeNode) {
+    let root = node.getTreeNodeDb().get(0);
+    this.visitChildren(root, this.changePathClass);
+  }
+
+  private init(node: any) {
     node.meta = node;
     node.children.forEach((child:any) => this.init(child));
+  }
+
+  private load() {
+    if(this.container !== undefined) this.container.nativeElement.setAttribute('style','');
+    this.techService.fetch(this.version, this.type).subscribe(r => {
+      this.init(r);
+      this.config.container = '#' + this.type;
+      this.treant = new Treant({chart: this.config, nodeStructure: r.children[0]});
+    })
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if(changes['version'] && !changes['version'].firstChange) {
+      this.view.clear();
+      this.treant.destroy();
+      this.load();
+    }
   }
 
   ngOnInit(): void {
@@ -65,12 +110,7 @@ export class TechTree implements OnInit {
       onCreateNode: this.createNode(),
       onTreeLoaded: this.onTreeLoaded()
     };
-
-    this.techService.fetch(this.type).subscribe(r => {
-      this.init(r);
-      this.config.container = '#' + this.type;
-      this.treant = new Treant({chart: this.config, nodeStructure: r.children[0]});
-    })
+    this.load();
   }
 
   createNode() {
@@ -83,10 +123,13 @@ export class TechTree implements OnInit {
   }
 
   onTreeLoaded() {
-    return (tree: any) => {
-      const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-      observer.observe();
+    return (root: TreeNode) => {
+      if(!this.observer) this.observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      this.observer.observe();
+      this.updatePath(root);
     }
   }
+
+
 
 }

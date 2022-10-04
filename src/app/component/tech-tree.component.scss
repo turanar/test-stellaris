@@ -12,45 +12,47 @@
 
 .node {
   padding: 2px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: black;
   border: 3px solid #000;
   width: 275px;
   height: 66px;
-  font-family: 'Arimo', Verdana;
+  font-family: 'Arimo', Verdana, sans-serif;
   font-size: 12px;
   color: white;
   cursor: pointer;
-}
 
-.node.physics {
-  border-color: #4396E2;
-  background-image: url("../../assets/css/tech_bg_physics.png");
-  &.active {
-    background-color: #0F2233;
+  &.rare {
+    background-image: url("../../assets/css/tech_bg_rare.png") !important;
   }
-}
 
-.node.society {
-  border-color: #5ACA9C;
-  background-image: url("../../assets/css/tech_bg_society.png");
-  &.active {
-    background-color: #173327;
+  &.dangerous {
+    background-image: url("../../assets/css/tech_bg_dangerous.png") !important;
   }
-}
 
-.node.engineering {
-  border-color: #E29C43;
-  background-image: url('../../assets/css/tech_bg_engineering.png');
-  &.active {
-    background-color: #33230F;
+  &.physics {
+    border-color: #4396E2;
+    background-image: url("../../assets/css/tech_bg_physics.png");
+    &.active {
+      background-color: #0F2233;
+    }
   }
-}
 
-.node.dangerous {
-  background-image: url("../../assets/css/tech_bg_dangerous.png");
+  &.society {
+    border-color: #5ACA9C;
+    background-image: url("../../assets/css/tech_bg_society.png");
+    &.active {
+      background-color: #173327;
+    }
+  }
+
+  &.engineering {
+    border-color: #E29C43;
+    background-image: url('../../assets/css/tech_bg_engineering.png');
+    &.active {
+      background-color: #33230F;
+    }
+  }
 }
 
 div.node-status {
@@ -76,12 +78,6 @@ p.node-name {
   overflow: hidden;
   white-space: nowrap;
   z-index: 2;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -97,22 +93,11 @@ div.icon {
 }
 
 p.node-title {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 p.node-desc {
   margin-bottom: 2px;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 

@@ -1,6 +1,6 @@
 import {Tech} from "./tech";
 
-export abstract class TreeNode {
+export interface TreeNode {
   id: number;
   parentId: number;
   treeId: number;
@@ -23,14 +23,14 @@ export abstract class TreeNode {
   meta: any;
   children: number[];
 
-  abstract getTree();
-  abstract getTreeConfig();
-  abstract getTreeNodeDb();
-  abstract lookupNode(nodeId: number);
-  abstract childAt(index:number);
-  abstract parent(): TreeNode;
-  abstract hide();
-  abstract show();
-  abstract collapse();
-  abstract expand();
+  getTree();
+  getTreeConfig();
+  getTreeNodeDb();
+  lookupNode(nodeId: number);
+  childAt(index:number);
+  parent(): TreeNode;
+  hide();
+  show();
+  collapse();
+  expand();
 }

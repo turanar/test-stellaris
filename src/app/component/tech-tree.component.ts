@@ -16,7 +16,7 @@ declare var lozad: any;
 })
 export class TechTree implements OnInit {
   @ViewChild('node') public node: TemplateRef<any>;
-  @ViewChild('treeDiv', {read: ViewContainerRef}) viewRef: ViewContainerRef
+  @ViewChild('container', {read: ViewContainerRef}) view: ViewContainerRef
 
   @Input() type: string;
   config: Config;
@@ -76,7 +76,7 @@ export class TechTree implements OnInit {
 
   createNode() {
     return (treeNode: TreeNode) => {
-      let viewRef = this.viewRef.createEmbeddedView(this.node, {$implicit: treeNode, data: treeNode.meta});
+      let viewRef = this.view.createEmbeddedView(this.node, {$implicit: treeNode.meta, item: treeNode});
       let e = viewRef.rootNodes[0];
       e.className = 'node ' + treeNode.meta.area;
       return e;

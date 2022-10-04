@@ -3,23 +3,32 @@ import {Component, Input, OnInit, TemplateRef, ViewChild, ViewContainerRef, View
 import {TechnologyService} from "../service/technology.service";
 import {Config} from "src/app/config/config";
 import {TreeNode} from "src/app/config/tree-node";
+import {Tech} from "../config/tech";
 
 declare var Treant: any;
 declare var lozad: any;
 
 @Component({
   encapsulation: ViewEncapsulation.None,
-  selector: 'treant-tree',
-  styleUrls: ['treant-tree.component.scss'],
-  templateUrl: 'treant-tree.component.html'
+  selector: 'tech-tree',
+  styleUrls: ['tech-tree.component.scss'],
+  templateUrl: 'tech-tree.component.html'
 })
-export class TreantTree implements OnInit {
+export class TechTree implements OnInit {
   @ViewChild('node') public node: TemplateRef<any>;
   @ViewChild('treeDiv', {read: ViewContainerRef}) viewRef: ViewContainerRef
 
   @Input() type: string;
   config: Config;
   treant: any;
+  civics: any[] = [
+    { value: (data: Tech) => data.is_gestalt, image: 'ethic_gestalt_consciousness'},
+    { value: (data: Tech) => data.is_machine_empire, image: 'auth_machine_intelligence'},
+    { value: (data: Tech) => data.is_drive_assimilator, image: 'civic_machine_assimilator'},
+    { value: (data: Tech) => data.is_rogue_servitor, image: 'civic_machine_servitor'},
+    { value: (data: Tech) => data.is_hive_empire, image: 'auth_hive_mind'},
+    { value: (data: Tech) => data.is_megacorp, image: 'auth_corporate'}
+  ];
 
   constructor(private techService : TechnologyService) { }
 

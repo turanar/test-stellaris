@@ -1,0 +1,35 @@
+<div>
+  <div class="chart" id="{{ this.type }}">
+    <ng-container #treeDiv></ng-container>
+  </div>
+</div>
+
+<ng-template #node let-item let-data="data">
+  <div id="{{ data.key }}" [class.active]="data.tier < 1 || data.active">
+    <div class="icon lozad" [attr.data-background-image]="'/assets/img/' + data.key +'.png'"></div>
+    <p class="node-name" title="{{data.name}}">{{data.name}}</p>
+    <p class="node-title">
+      {{ data.category }} -
+      <span class="tier tier-{{data.tier}}" *ngIf="data.tier > 0">Tier {{data.tier}}</span>
+      <span class="tier tier-0" *ngIf="data.tier == 0">Starting</span>
+    </p>
+    <p class="node-desc">
+      <ng-container *ngIf="data.tier > 0">
+        Cost: <span class="{{data.area}}-research">{{data.cost}}, Weight: {{data.base_weight}}</span>
+      </ng-container>
+    </p>
+    <p class="node-desc" style="color:yellow">
+      <ng-template #ethic let-image="image" let-value="value">
+        <img src="/assets/icons/{{value ? 'yes' : 'no'}}.png"><img src="/assets/icons/{{image}}.png">
+      </ng-template>
+      <ng-container *ngFor="let civic of civics">
+        <ng-container *ngIf="civic.value(data) !== undefined">
+          <ng-container *ngTemplateOutlet="ethic; context: {value: civic.value(data), image: civic.image}"></ng-container>
+        </ng-container>
+      </ng-container>
+    </p>
+    <div class="node-status" (click)="onClick(item)"></div>
+  </div>
+</ng-template>
+
+

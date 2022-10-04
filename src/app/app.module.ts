@@ -5,11 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {TechnologyService} from "./service/technology.service";
 import {HttpClientModule} from "@angular/common/http";
-import {TreantTree} from "./component/treant-tree.component";
+import {TechTree} from "./component/tech-tree.component";
 
 @NgModule({
   declarations: [
-    AppComponent,TreantTree
+    AppComponent,TechTree
   ],
   imports: [
     BrowserModule,

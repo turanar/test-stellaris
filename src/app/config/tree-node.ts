@@ -1,3 +1,5 @@
+import {Tech} from "./tech";
+
 export abstract class TreeNode {
   id: number;
   parentId: number;

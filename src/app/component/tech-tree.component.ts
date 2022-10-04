@@ -33,31 +33,30 @@ export class TechTree implements OnInit {
   constructor(private techService : TechnologyService) { }
 
   find = (index: number): TreeNode => this.treant.tree.nodeDB.db[index];
-  disable = (node: TreeNode) => {
-    node.children.map(this.find).forEach((n: TreeNode)=> {
-      n.meta.active = false;
-      this.disable(n);
+
+  visitChildren = (node: TreeNode, f: Function) => {
+    node.children.map(this.find).forEach(n => {
+      f.call(this,n); this.visitChildren(n, f);
     })
+  };
+
+  visitParent = (node: TreeNode, f: Function) => {
+    f.call(this, node);
+    if(node.parent()) this.visitParent(node.parent(), f);
   }
 
-  onClick(event: TreeNode) {
+  toggleActivation(event: TreeNode) {
     if(event.meta.tier < 1) return;
     event.meta.active = !event.meta.active;
-
-    let parent= event.parent();
-    while(parent !== undefined && event.meta.active) {
-      parent.meta.active = true;
-      parent = parent.parent();
-    }
-
-    if(!event.meta.active) this.disable(event);
+    // activate all parents
+    if(event.meta.active) this.visitParent(event, n => n.meta.active = true);
+    // de-activate all children
+    if(!event.meta.active) this.visitChildren(event, n => n.meta.active = false);
   }
 
   private init(node: TreeNode) {
     node.meta = node;
-    if(node.children) {
-      node.children.forEach((child:any) => this.init(child));
-    }
+    node.children.forEach((child:any) => this.init(child));
   }
 
   ngOnInit(): void {

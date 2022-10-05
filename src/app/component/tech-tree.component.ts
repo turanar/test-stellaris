@@ -125,8 +125,7 @@ export class TechTree implements OnInit, OnChanges {
   onTreeLoaded() {
     return (root: TreeNode) => {
       if(!this.observer) this.observer = lozad(); // lazy loads elements with default selector as '.lozad'
-      this.observer.observe();
-      this.updatePath(root);
+      this.techService.observe();
     }
   }
 

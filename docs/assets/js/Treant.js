@@ -366,7 +366,7 @@
      * TreeStore is used for holding initialized Tree objects
      *  Its purpose is to avoid global variables and enable multiple Trees on the page.
      */
-    var TreeStore = {
+    TreeStore = {
 
         store: [],
 

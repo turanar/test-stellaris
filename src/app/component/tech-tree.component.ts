@@ -24,7 +24,7 @@ declare var $: any;
   styleUrls: ['tech-tree.component.scss'],
   templateUrl: 'tech-tree.component.html'
 })
-export class TechTree implements OnInit, OnChanges {
+export class TechTreeComponent implements OnInit, OnChanges {
   @ViewChild('node') public node: TemplateRef<any>;
   @ViewChild('container', {read: ViewContainerRef}) view: ViewContainerRef
   @ViewChild('parent') container: ElementRef;
@@ -35,6 +35,7 @@ export class TechTree implements OnInit, OnChanges {
   config: Config;
   treant: any;
   observer: any;
+  nodeDB: TreeNode[];
 
   civics: any[] = [
     { value: (data: Tech) => data.is_gestalt, image: 'ethic_gestalt_consciousness'},
@@ -58,14 +59,15 @@ export class TechTree implements OnInit, OnChanges {
     if(node.parent()) this.visitParent(node.parent(), f);
   }
 
-  toggleActivation(event: TreeNode) {
-    if(event.meta.tier < 1) return;
-    event.meta.active = !event.meta.active;
+  toggleActivation(event: Event, item: TreeNode) {
+    if(item.meta.tier < 1) return;
+    item.meta.active = !item.meta.active;
     // activate all parents
-    if(event.meta.active) this.visitParent(event, n => n.meta.active = true);
+    if(item.meta.active) this.visitParent(item, n => n.meta.active = true);
     // de-activate all children
-    if(!event.meta.active) this.visitChildren(event, n => n.meta.active = false);
-    this.updatePath(event);
+    if(!item.meta.active) this.visitChildren(item, n => n.meta.active = false);
+    this.updatePath(item);
+    event.stopPropagation();
   }
 
   private changePathClass(node: TreeNode) {
@@ -93,6 +95,7 @@ export class TechTree implements OnInit, OnChanges {
       this.init(r);
       this.config.container = '#' + this.type;
       this.treant = new Treant({chart: this.config, nodeStructure: r.children[0]});
+      this.nodeDB = this.treant.tree.nodeDB.db;
     })
   }
 
@@ -129,6 +132,9 @@ export class TechTree implements OnInit, OnChanges {
     }
   }
 
-
-
+  area(key: string): string {
+    console.log(this.treant);
+    let find = this.nodeDB.find(n => n.meta.key == key)
+    return (find !== undefined)  ? find.meta.area : '';
+  }
 }

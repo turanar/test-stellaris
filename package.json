@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@ngneat/helipopper": "^5.1.4",
+    "@ngneat/overview": "^3.0.4",
     "lozad": "^1.16.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",

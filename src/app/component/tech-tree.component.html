@@ -5,9 +5,10 @@
 </div>
 
 <ng-template #node let-tech let-item="item">
-  <div id="{{ tech.key }}"
+  <div id="{{ tech.key }}" [tippy]="tooltip" [data]="tech"
         [class.active]="tech.tier < 1 || tech.active"
         [class.rare]="tech.is_rare" [class.dangerous]="tech.is_dangerous">
+
     <div class="icon lozad" [attr.data-background-image]="'assets/img/' + tech.key +'.png'"></div>
     <p class="node-name" title="{{tech.name}}">{{tech.name}}</p>
     <p class="node-title">
@@ -30,8 +31,45 @@
         </ng-container>
       </ng-container>
     </p>
-    <div class="node-status" (click)="toggleActivation(item)"></div>
+    <div class="node-status" (click)="toggleActivation($event, item)"></div>
   </div>
 </ng-template>
+
+<ng-template #tooltip let-tech="data">
+  <div class="extra-data">
+    <div class="tooltip-header">Description</div>
+    <div class="tooltip-content" style="max-width:320px">
+      {{tech.description}}
+    </div>
+
+    <ng-container *ngIf="tech.weight_modifiers.length > 0">
+      <div class="tooltip-header">Weight Modifiers</div>
+      <div class="tooltip-content"><pre [innerHTML]="tech.weight_modifiers.join('<br>') | safeHtml"></pre></div>
+    </ng-container>
+
+    <ng-container *ngIf="tech.potential.length > 0">
+      <div class="tooltip-header">Requirements</div>
+      <div class="tooltip-content"><pre [innerHTML]="tech.potential.join('<br/>') | safeHtml"></pre></div>
+    </ng-container>
+
+    <ng-container *ngIf="tech.prerequisites.length > 1">
+      <div class="tooltip-header">Required Technologies</div>
+      <div class="tooltip-content prerequisites">
+        <img *ngFor="let req of tech.prerequisites" class="left {{req | techArea}}" height="52" width="52" src="assets/img/{{req}}.png">
+        <div class="left">
+          <ng-container *ngFor="let req of tech.prerequisites_names">
+            <span class="node-status">{{req.name}}</span><br/>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="tech.feature_unlocks.length > 0">
+      <div class="tooltip-header">Research Effects</div>
+      <div class="tooltip-content" [innerHTML]="tech.feature_unlocks.join('<br/>') | safeHtml"></div>
+    </ng-container>
+  </div>
+</ng-template>
+
 
 

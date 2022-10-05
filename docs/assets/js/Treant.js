@@ -816,7 +816,7 @@
                     continue;
                 }
 
-                // if the tree is smaller than the draw area, then center the tree within drawing area
+                // if the tree is smaller than the draw tech-area.pipe.ts, then center the tree within drawing tech-area.pipe.ts
                 //node.X += negOffsetX + ((treeWidth < this.drawArea.clientWidth) ? deltaX : this.CONFIG.padding);
                 //node.Y += negOffsetY + ((treeHeight < this.drawArea.clientHeight) ? deltaY : this.CONFIG.padding);
 

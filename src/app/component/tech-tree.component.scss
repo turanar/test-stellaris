@@ -143,3 +143,53 @@ path {
   &.engineering { stroke: #E29C43; }
   &.physics { stroke: #4396E2; }
 }
+
+
+.extra-data {
+  font-size: 12px;
+  font-family: 'Arimo', Verdana;
+  color: white;
+  border-radius: unset;
+
+  .tooltip-header {
+    width: 100%;
+    color: #f59f17;
+    font-weight: bold;
+  }
+
+  .prerequisites img {
+    border-radius: 2px;
+    background-color: black;
+    border: 2px solid #000;
+    padding: 1px;
+  }
+
+  .left {
+    margin-right: 5px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+  }
+
+  img.society {
+    border-color: #5ACA9C;
+  }
+
+  img.engineering {
+    border-color: #E29C43;
+  }
+
+  img.physics {
+    border-color: #4396E2;
+  }
+
+  pre {
+    font-family: 'Arimo', Verdana;
+  }
+}
+
+
+
+
+
+

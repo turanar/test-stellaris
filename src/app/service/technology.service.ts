@@ -11,7 +11,7 @@ export class TechnologyService {
   constructor(private httpClient: HttpClient) {}
 
   public fetch(version: string, type: string): Observable<any> {
-    return this.httpClient.get(`/assets/json/${version}/${type}.json`);
+    return this.httpClient.get(`assets/json/${version}/${type}.json`);
   }
 
   public observe() {

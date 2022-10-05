@@ -8,7 +8,7 @@
   <div id="{{ tech.key }}"
         [class.active]="tech.tier < 1 || tech.active"
         [class.rare]="tech.is_rare" [class.dangerous]="tech.is_dangerous">
-    <div class="icon lozad" [attr.data-background-image]="'/assets/img/' + tech.key +'.png'"></div>
+    <div class="icon lozad" [attr.data-background-image]="'assets/img/' + tech.key +'.png'"></div>
     <p class="node-name" title="{{tech.name}}">{{tech.name}}</p>
     <p class="node-title">
       {{ tech.category }} -
@@ -22,7 +22,7 @@
     </p>
     <p class="node-desc">
       <ng-template #ethic let-image="image" let-value="value">
-        <img src="/assets/icons/{{value ? 'yes' : 'no'}}.png"><img src="/assets/icons/{{image}}.png">
+        <img src="assets/icons/{{value ? 'yes' : 'no'}}.png"><img src="assets/icons/{{image}}.png">
       </ng-template>
       <ng-container *ngFor="let civic of civics">
         <ng-container *ngIf="civic.value(tech) !== undefined">

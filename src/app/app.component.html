@@ -1,27 +1,7 @@
-<nav class="menu">
-    <div class="nav">
-    <a [class.selected]="selected==0" (click)="click(selectedTree.all)">
-      <img src="assets/icons/research_icon.png"> All
-    </a>
-    <a [class.selected]="selected==1" (click)="click(selectedTree.physics)">
-      <img src="assets/icons/physics_research.png"> Physics
-    </a>
-    <a [class.selected]="selected==2" (click)="click(selectedTree.society)">
-      <img src="assets/icons/society_research.png"> Society
-    </a>
-    <a [class.selected]="selected==3" (click)="click(selectedTree.engineering)">
-      <img src="assets/icons/engineering_research.png"> Engineering
-    </a>
-    <a class="separator"></a>
-    <a class="version">Version :
-    <select #v (change)="changeVersion(v.value)">
-      <option *ngFor="let version of versions" value="{{ version.route }}">{{ version.title }}</option>
-    </select>
-    </a>
-  </div>
-</nav>
+<app-nav [versionArray]="versions" (onTabSelect)="selected = $event" (onVersionSelect)="version = $event"></app-nav>
 <main class="main">
-  <tech-tree type="physics" [class.hide]="selected!=0 && selected!=1" [version]="this.selectedVersion"></tech-tree>
-  <tech-tree type="society" [class.hide]="selected!=0 && selected!=2" [version]="this.selectedVersion"></tech-tree>
-  <tech-tree type="engineering" [class.hide]="selected!=0 && selected!=3" [version]="this.selectedVersion"></tech-tree>
+  <tech-tree type="physics"     [class.hide]="selected!=0 && selected!=1" [version]="version"></tech-tree>
+  <tech-tree type="society"     [class.hide]="selected!=0 && selected!=2" [version]="version"></tech-tree>
+  <tech-tree type="engineering" [class.hide]="selected!=0 && selected!=3" [version]="version"></tech-tree>
+  <anomalies class="anomalies" type="anomalies"  [class.hide]="selected!=4" [version]="version" ></anomalies>
 </main>

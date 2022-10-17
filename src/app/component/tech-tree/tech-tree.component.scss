@@ -188,8 +188,17 @@ path {
   }
 }
 
+#anomalies.chart {
+  display: flex;
+  flex-wrap: wrap;
 
-
-
+  .node {
+    display: block !important;
+    margin: 0 15px 15px 0;
+    .node-status {
+      display: none;
+    }
+  }
+}
 
 

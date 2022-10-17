@@ -1,0 +1,14 @@
+<nav class="menu">
+  <div class="nav">
+    <a *ngFor="let opt of (areaOptions | keyvalue); let i = index"
+       [class.selected]="selected == i" (click)="selected = i">
+      <img src="assets/icons/{{ opt.value.icon }}"> {{ opt.value.label }}
+    </a>
+    <a class="separator"></a>
+    <a class="version">Version :
+      <select #v (change)="selected = 0;onVersionSelect.emit(v.value)">
+        <option *ngFor="let version of versionArray" value="{{ version.route }}">{{ version.title }}</option>
+      </select>
+    </a>
+  </div>
+</nav>

@@ -46,28 +46,19 @@ export class TechTreeComponent implements OnInit, OnChanges {
     { value: (data: Tech) => data.is_megacorp, image: 'auth_corporate'}
   ];
 
-  constructor(private techService : TechnologyService) { }
+  constructor(protected techService : TechnologyService) {
 
-  visitChildren = (node: TreeNode, f: Function) => {
+  }
+
+  private visitChildren = (node: TreeNode, f: Function) => {
     node.children.map(i => node.getTreeNodeDb().get(i)).forEach(n => {
       f.call(this,n); this.visitChildren(n, f);
     })
   };
 
-  visitParent = (node: TreeNode, f: Function) => {
+  private visitParent = (node: TreeNode, f: Function) => {
     f.call(this, node);
     if(node.parent()) this.visitParent(node.parent(), f);
-  }
-
-  toggleActivation(event: Event, item: TreeNode) {
-    if(item.meta.tier < 1) return;
-    item.meta.active = !item.meta.active;
-    // activate all parents
-    if(item.meta.active) this.visitParent(item, n => n.meta.active = true);
-    // de-activate all children
-    if(!item.meta.active) this.visitChildren(item, n => n.meta.active = false);
-    this.updatePath(item);
-    event.stopPropagation();
   }
 
   private changePathClass(node: TreeNode) {
@@ -99,6 +90,40 @@ export class TechTreeComponent implements OnInit, OnChanges {
     })
   }
 
+
+  protected createNode() {
+    return (treeNode: any) => {
+      let viewRef = this.view.createEmbeddedView(this.node, {$implicit: treeNode.meta, item: treeNode});
+      let e = viewRef.rootNodes[0];
+      e.className = 'node ' + treeNode.meta.area;
+      return e;
+    }
+  }
+
+  private onTreeLoaded() {
+    return (root: TreeNode) => {
+      if(!this.observer) this.observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      this.techService.observe();
+    }
+  }
+
+  toggleActivation(event: Event, item: TreeNode) {
+    if(item.meta.tier < 1) return;
+    item.meta.active = !item.meta.active;
+    // activate all parents
+    if(item.meta.active) this.visitParent(item, n => n.meta.active = true);
+    // de-activate all children
+    if(!item.meta.active) this.visitChildren(item, n => n.meta.active = false);
+    this.updatePath(item);
+    event.stopPropagation();
+  }
+
+  area(key: string): string {
+    console.log(this.treant);
+    let find = this.nodeDB.find(n => n.meta.key == key)
+    return (find !== undefined)  ? find.meta.area : '';
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
     if(changes['version'] && !changes['version'].firstChange) {
       this.view.clear();
@@ -114,27 +139,5 @@ export class TechTreeComponent implements OnInit, OnChanges {
       onTreeLoaded: this.onTreeLoaded()
     };
     this.load();
-  }
-
-  createNode() {
-    return (treeNode: TreeNode) => {
-      let viewRef = this.view.createEmbeddedView(this.node, {$implicit: treeNode.meta, item: treeNode});
-      let e = viewRef.rootNodes[0];
-      e.className = 'node ' + treeNode.meta.area;
-      return e;
-    }
-  }
-
-  onTreeLoaded() {
-    return (root: TreeNode) => {
-      if(!this.observer) this.observer = lozad(); // lazy loads elements with default selector as '.lozad'
-      this.techService.observe();
-    }
-  }
-
-  area(key: string): string {
-    console.log(this.treant);
-    let find = this.nodeDB.find(n => n.meta.key == key)
-    return (find !== undefined)  ? find.meta.area : '';
   }
 }

@@ -7,7 +7,7 @@ declare var TreeStore: any;
 export class TeachAreaPipe implements PipeTransform {
 
   transform(value) {
-    for(let store of TreeStore.store) {
+    for(let store of TreeStore.storeMap.values()) {
       if(!store) continue;
       let found = store.nodeDB.db.find((n:TreeNode) => n.meta.key == value);
       if(found) return found.meta.area;

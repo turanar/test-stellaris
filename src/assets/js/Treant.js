@@ -367,16 +367,16 @@
      *  Its purpose is to avoid global variables and enable multiple Trees on the page.
      */
     TreeStore = {
-
-        store: [],
+        nextVal: 0,
+        storeMap: {} = new Map(),
 
         /**
          * @param {object} jsonConfig
          * @returns {Tree}
          */
         createTree: function( jsonConfig ) {
-            var nNewTreeId = this.store.length;
-            this.store.push( new Tree( jsonConfig, nNewTreeId ) );
+            var nNewTreeId = this.nextVal++;
+            this.storeMap.set(nNewTreeId, new Tree( jsonConfig, nNewTreeId ));
             return this.get( nNewTreeId );
         },
 
@@ -385,7 +385,7 @@
          * @returns {Tree}
          */
         get: function ( treeId ) {
-            return this.store[treeId];
+            return this.storeMap.get(treeId);
         },
 
         /**
@@ -414,8 +414,7 @@
                 draw_area.style.overflowY = '';
                 draw_area.style.overflowX = '';
                 draw_area.className = classes_to_stay.join(' ');
-
-                this.store[treeId] = null;
+                this.storeMap.delete(treeId);
             }
             return this;
         }

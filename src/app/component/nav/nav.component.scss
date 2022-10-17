@@ -1,0 +1,55 @@
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #333;
+  z-index: 2;
+  width: 100%;
+  font-family: 'Arimo', Verdana;
+  font-size: 11pt;
+
+  div.nav {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    border: none;
+    height: 43px;
+  }
+
+  a {
+    padding: 8px 20px 7px;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    vertical-align: middle;
+    line-height: normal;
+    color: #fff;
+    background-color: #303030;
+    margin-left: 5px;
+  }
+
+  a.separator {
+    margin:auto;
+    background-color: transparent;
+  }
+
+  a.version {
+    padding: 5px 20px 10px;
+    background-color: transparent;
+  }
+
+  a.selected {
+    background-color: #474747;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    line-height: normal;
+  }
+}

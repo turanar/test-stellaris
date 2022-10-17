@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {TechnologyService} from "./service/technology.service";
 import {HttpClientModule} from "@angular/common/http";
 import {TechTreeComponent} from "./component/tech-tree/tech-tree.component";
@@ -10,6 +10,8 @@ import {TippyModule} from "@ngneat/helipopper";
 
 import {SafeHtmlPipe} from "src/app/pipe/safe-html.pipe";
 import {TeachAreaPipe} from "src/app/pipe/tech-area.pipe";
+import { NavComponent } from './component/nav/nav.component';
+import {AnomaliesComponent} from "src/app/component/tech-tree/anomalies.component";
 
 export const tooltipVariation: Partial<any> = {
   animation: false,
@@ -21,7 +23,12 @@ export const tooltipVariation: Partial<any> = {
 
 @NgModule({
   declarations: [
-    AppComponent,TechTreeComponent, SafeHtmlPipe, TeachAreaPipe
+    AppComponent,
+    TechTreeComponent,
+    AnomaliesComponent,
+    SafeHtmlPipe,
+    TeachAreaPipe,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -37,4 +44,5 @@ export const tooltipVariation: Partial<any> = {
   providers: [TechnologyService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

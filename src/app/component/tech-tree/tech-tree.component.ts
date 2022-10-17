@@ -9,10 +9,10 @@ import {
   ViewEncapsulation,
 } from "@angular/core";
 
-import {TechnologyService} from "../service/technology.service";
+import {TechnologyService} from "../../service/technology.service";
 import {Config} from "src/app/config/config";
 import {TreeNode} from "src/app/config/tree-node";
-import {Tech} from "../config/tech";
+import {Tech} from "../../config/tech";
 
 declare var Treant: any;
 declare var lozad: any;

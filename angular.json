@@ -40,6 +40,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "baseHref": "/test-stellaris/",
+            "resourcesOutputPath": "resources",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -77,7 +78,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "none"
             },
             "development": {
               "buildOptimizer": false,

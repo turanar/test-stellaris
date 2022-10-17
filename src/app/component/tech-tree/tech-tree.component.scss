@@ -23,16 +23,16 @@
   cursor: pointer;
 
   &.rare {
-    background-image: url("../../assets/css/tech_bg_rare.png") !important;
+    background-image: url("^assets/css/tech_bg_rare.png") !important;
   }
 
   &.dangerous {
-    background-image: url("../../assets/css/tech_bg_dangerous.png") !important;
+    background-image: url("^assets/css/tech_bg_dangerous.png") !important;
   }
 
   &.physics {
     border-color: #4396E2;
-    background-image: url("../../assets/css/tech_bg_physics.png");
+    background-image: url("^assets/css/tech_bg_physics.png");
     &.active {
       background-color: #0F2233;
     }
@@ -40,7 +40,7 @@
 
   &.society {
     border-color: #5ACA9C;
-    background-image: url("../../assets/css/tech_bg_society.png");
+    background-image: url("^assets/css/tech_bg_society.png");
     &.active {
       background-color: #173327;
     }
@@ -48,7 +48,7 @@
 
   &.engineering {
     border-color: #E29C43;
-    background-image: url('../../assets/css/tech_bg_engineering.png');
+    background-image: url('^assets/css/tech_bg_engineering.png');
     &.active {
       background-color: #33230F;
     }
@@ -103,26 +103,26 @@ div.node-status {
 }
 
 .active div.node-status {
-  background-image: url("../../assets/icons/yes.png");
+  background-image: url("^assets/icons/yes.png");
 }
 
 span.society-research::before {
-  background: url("../../assets/img/society_research.png") center center no-repeat;
-  content:  url("../../assets/img/blank11px.png");
+  background: url("^assets/img/society_research.png") center center no-repeat;
+  content:  url("^assets/img/blank11px.png");
   width: 11px;
   height: 11px;
 }
 
 span.engineering-research::before {
-  background: url("../../assets/img/engineering_research.png") center center no-repeat;
-  content:  url("../../assets/img/blank11px.png");
+  background: url("^assets/img/engineering_research.png") center center no-repeat;
+  content:  url("^assets/img/blank11px.png");
   width: 11px;
   height: 11px;
 }
 
 span.physics-research::before {
-  background: url("../../assets/img/physics_research.png") center center no-repeat;
-  content:  url("../../assets/img/blank11px.png");
+  background: url("^assets/img/physics_research.png") center center no-repeat;
+  content:  url("^assets/img/blank11px.png");
   width: 11px;
   height: 11px;
 }

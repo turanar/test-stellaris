@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {TechnologyService} from "./service/technology.service";
 import {HttpClientModule} from "@angular/common/http";
-import {TechTreeComponent} from "./component/tech-tree.component";
+import {TechTreeComponent} from "./component/tech-tree/tech-tree.component";
 import {TippyModule} from "@ngneat/helipopper";
 
 import {SafeHtmlPipe} from "src/app/pipe/safe-html.pipe";

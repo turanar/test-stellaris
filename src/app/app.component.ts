@@ -2,9 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {TechnologyService} from "./service/technology.service";
 
 export enum selectedTree {
-  all,
-  physics,society, engineering
+  all, physics,society, engineering
 }
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +12,8 @@ export enum selectedTree {
 })
 export class AppComponent implements OnInit {
   title = 'stellaris';
+  readonly selectedTree = selectedTree;
+
   selected: selectedTree = selectedTree.all;
   selectedVersion: string = 'cepheus-3.4.3';
 
@@ -37,7 +39,8 @@ export class AppComponent implements OnInit {
   }
 
   changeVersion(selected) {
-    console.log(selected);
+    this.selected = selectedTree.all;
+    this.selectedVersion = selected;
   }
 
   ngOnInit(): void {

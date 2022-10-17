@@ -15,9 +15,10 @@ export class AppComponent implements OnInit {
   readonly selectedTree = selectedTree;
 
   selected: selectedTree = selectedTree.all;
-  selectedVersion: string = 'cepheus-3.4.3';
+  selectedVersion: string = 'orion-3.6.0';
 
   versions: any = [
+  { name: 'Orion 3.6.0',   route: 'orion-3.6.0',  title: 'Stellaris 3.6.0 (Orion)' },
   { name: 'Cepheus 3.4.3',   route: 'cepheus-3.4.3',  title: 'Stellaris 3.4.3 (Cepheus)' },
   { name: 'Herbert 3.2.2',   route: 'herbert-3.2.2',  title: 'Stellaris 3.2.2 (Herbert)' },
   { name: 'Lem 3.1.1',       route: 'lem-3.1.1',     title: 'Stellaris 3.1.1 (Lem)' },

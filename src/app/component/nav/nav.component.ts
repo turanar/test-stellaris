@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 export class AreaOption {
   label: string;
@@ -24,10 +24,12 @@ export let AreaOptions: { [key in number]: AreaOption } = {
 })
 export class NavComponent {
   readonly areaOptions = AreaOptions;
-  @Input() versionArray: any[];
+  @Input() versionArray: ReadonlyMap<number, any>;
 
   @Output() onTabSelect = new EventEmitter<number>();
   @Output() onVersionSelect = new EventEmitter<string>();
+
+  originalOrder = (): number => 0;
 
   private _selected: number = 0;
   get selected(): number {

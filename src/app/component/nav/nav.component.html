@@ -7,7 +7,7 @@
     <a class="separator"></a>
     <a class="version">Version :
       <select #v (change)="selected = 0;onVersionSelect.emit(v.value)">
-        <option *ngFor="let version of versionArray" value="{{ version.route }}">{{ version.title }}</option>
+        <option *ngFor="let version of versionArray | keyvalue: originalOrder" value="{{ version.value.route }}">{{ version.value.title }}</option>
       </select>
     </a>
   </div>

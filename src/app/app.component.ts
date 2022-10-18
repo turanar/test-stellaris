@@ -19,9 +19,7 @@ export class AppComponent implements OnInit {
     document.title = this.versions[this.version].title;
   }
 
-  constructor(private route: ActivatedRoute) {
-
-  }
+  constructor() {}
 
   selected: number = 0;
 
@@ -45,6 +43,5 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = this.versions[this.version].title;
-    console.log(this.route);
   }
 }

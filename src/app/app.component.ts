@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TechnologyService} from "./service/technology.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,10 @@ export class AppComponent implements OnInit {
     this.selected = 0;
     this._version = value;
     document.title = this.versions[this.version].title;
+  }
+
+  constructor(private route: ActivatedRoute) {
+
   }
 
   selected: number = 0;
@@ -40,5 +45,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     document.title = this.versions[this.version].title;
+    console.log(this.route);
   }
 }

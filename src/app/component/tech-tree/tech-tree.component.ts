@@ -1,8 +1,11 @@
 import {
-  Component, ElementRef,
+  ChangeDetectionStrategy, ChangeDetectorRef,
+  Component,
+  ElementRef,
   Input,
   OnChanges,
-  OnInit, SimpleChanges,
+  OnInit,
+  SimpleChanges,
   TemplateRef,
   ViewChild,
   ViewContainerRef,
@@ -22,7 +25,8 @@ declare var $: any;
   encapsulation: ViewEncapsulation.None,
   selector: 'tech-tree',
   styleUrls: ['tech-tree.component.scss'],
-  templateUrl: 'tech-tree.component.html'
+  templateUrl: 'tech-tree.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TechTreeComponent implements OnInit, OnChanges {
   @ViewChild('node') public node: TemplateRef<any>;
@@ -46,7 +50,7 @@ export class TechTreeComponent implements OnInit, OnChanges {
     { value: (data: Tech) => data.is_megacorp, image: 'auth_corporate'}
   ];
 
-  constructor(protected techService : TechnologyService) {
+  constructor(protected techService : TechnologyService, private changeDetectorRef : ChangeDetectorRef) {
 
   }
 
@@ -104,6 +108,7 @@ export class TechTreeComponent implements OnInit, OnChanges {
     return (root: TreeNode) => {
       if(!this.observer) this.observer = lozad(); // lazy loads elements with default selector as '.lozad'
       this.techService.observe();
+      this.changeDetectorRef.detectChanges();
     }
   }
 

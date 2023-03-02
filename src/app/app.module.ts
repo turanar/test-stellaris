@@ -9,9 +9,10 @@ import {TechTreeComponent} from "./component/tech-tree/tech-tree.component";
 import {TippyModule} from "@ngneat/helipopper";
 
 import {SafeHtmlPipe} from "src/app/pipe/safe-html.pipe";
-import {TeachAreaPipe} from "src/app/pipe/tech-area.pipe";
-import { NavComponent } from './component/nav/nav.component';
+import {TechAreaPipe} from "src/app/pipe/tech-area.pipe";
+import {NavComponent} from './component/nav/nav.component';
 import {AnomaliesComponent} from "src/app/component/tech-tree/anomalies.component";
+import {TechTextPipe} from "./pipe/tech-text.pipe";
 
 export const tooltipVariation: Partial<any> = {
   animation: false,
@@ -27,7 +28,8 @@ export const tooltipVariation: Partial<any> = {
     TechTreeComponent,
     AnomaliesComponent,
     SafeHtmlPipe,
-    TeachAreaPipe,
+    TechAreaPipe,
+    TechTextPipe,
     NavComponent
   ],
   imports: [

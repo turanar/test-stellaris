@@ -201,4 +201,18 @@ path {
   }
 }
 
+img.resource {
+  position: relative;
+  top: 4px;
+  margin-top: -4px;
+  width: 16px;
+  height: 16px;
+}
 
+span.yellow {
+  color: yellow;
+}
+
+span.green {
+  color: lawngreen;
+}

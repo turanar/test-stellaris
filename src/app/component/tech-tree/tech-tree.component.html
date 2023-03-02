@@ -44,12 +44,12 @@
 
     <ng-container *ngIf="tech.weight_modifiers.length > 0">
       <div class="tooltip-header">Weight Modifiers</div>
-      <div class="tooltip-content"><pre [innerHTML]="tech.weight_modifiers.join('<br>') | safeHtml"></pre></div>
+      <div class="tooltip-content"><pre [innerHTML]="tech.weight_modifiers.join('<br>')  | techText| safeHtml"></pre></div>
     </ng-container>
 
     <ng-container *ngIf="tech.potential.length > 0">
       <div class="tooltip-header">Requirements</div>
-      <div class="tooltip-content"><pre [innerHTML]="tech.potential.join('<br/>') | safeHtml"></pre></div>
+      <div class="tooltip-content"><pre [innerHTML]="tech.potential.join('<br/>')  | techText| safeHtml"></pre></div>
     </ng-container>
 
     <ng-container *ngIf="tech.prerequisites.length > 1">
@@ -66,7 +66,7 @@
 
     <ng-container *ngIf="tech.feature_unlocks.length > 0">
       <div class="tooltip-header">Research Effects</div>
-      <div class="tooltip-content" [innerHTML]="tech.feature_unlocks.join('<br/>') | safeHtml"></div>
+      <div class="tooltip-content" [innerHTML]="tech.feature_unlocks.join('<br/>') | techText| safeHtml"></div>
     </ng-container>
   </div>
 </ng-template>

@@ -7,5 +7,6 @@ export class TechTextPipe implements PipeTransform {
         .replace(/£([^£]*)£/g, "<img class=\"resource\" src=\"assets/icons/$1.png\">")
         .replace(/§Y([^§]*)§!/g, "<span class=\"yellow\">$1</span>")
         .replace(/§G([^§]*)§!/g, "<span class=\"green\">$1</span>")
+      .replace(/§G([^§]*)§!/g, "<span class=\"red\">$1</span>")
   }
 }

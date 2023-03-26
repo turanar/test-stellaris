@@ -16,6 +16,7 @@ import {TechnologyService} from "../../service/technology.service";
 import {Config} from "src/app/config/config";
 import {TreeNode} from "src/app/config/tree-node";
 import {Tech} from "../../config/tech";
+import {SettingsService} from "src/app/service/settings.service";
 
 declare var Treant: any;
 declare var lozad: any;
@@ -40,6 +41,7 @@ export class TechTreeComponent implements OnInit, OnChanges {
   treant: any;
   observer: any;
   nodeDB: TreeNode[];
+  root: TreeNode;
 
   civics: any[] = [
     { value: (data: Tech) => data.is_gestalt, image: 'ethic_gestalt_consciousness'},
@@ -50,12 +52,22 @@ export class TechTreeComponent implements OnInit, OnChanges {
     { value: (data: Tech) => data.is_megacorp, image: 'auth_corporate'}
   ];
 
-  constructor(protected techService : TechnologyService, private changeDetectorRef : ChangeDetectorRef) {
+  constructor(protected techService : TechnologyService, private changeDetectorRef : ChangeDetectorRef, private settingsService: SettingsService) {
+    this.settingsService.onEthicsChange.subscribe(fn => {
+      this.selectEthics(this.root, fn);
+    });
+  }
 
+  selectEthics(node: any, predicate: Function) {
+    this.visitChildren(node, n => { if(predicate(n)) {
+      n.disabled = true;
+      this.visitChildren(n, c => c.disabled = true);
+    } });
+    this.changeDetectorRef.markForCheck();
   }
 
   private visitChildren = (node: TreeNode, f: Function) => {
-    node.children.map(i => node.getTreeNodeDb().get(i)).forEach(n => {
+    if(node && node.children) node.children.map(i => node.getTreeNodeDb().get(i)).forEach(n => {
       f.call(this,n); this.visitChildren(n, f);
     })
   };
@@ -79,6 +91,7 @@ export class TechTreeComponent implements OnInit, OnChanges {
     this.visitChildren(root, this.changePathClass);
   }
 
+
   private init(node: any) {
     node.meta = node;
     node.children.forEach((child:any) => this.init(child));
@@ -89,7 +102,7 @@ export class TechTreeComponent implements OnInit, OnChanges {
     this.techService.fetch(this.version, this.type).subscribe(r => {
       this.init(r);
       this.config.container = '#' + this.type;
-      this.treant = new Treant({chart: this.config, nodeStructure: r.children[0]});
+      this.treant = new Treant({chart: this.config, nodeStructure: r.children[0]}, () => {}, $);
       this.nodeDB = this.treant.tree.nodeDB.db;
     })
   }
@@ -106,6 +119,7 @@ export class TechTreeComponent implements OnInit, OnChanges {
 
   private onTreeLoaded() {
     return (root: TreeNode) => {
+      this.root = root;
       if(!this.observer) this.observer = lozad(); // lazy loads elements with default selector as '.lozad'
       this.techService.observe();
       this.changeDetectorRef.detectChanges();

@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {SettingsService} from "src/app/service/settings.service";
 
 export class AreaOption {
   label: string;
@@ -40,5 +41,11 @@ export class NavComponent {
     this.onTabSelect.emit(this._selected);
   }
 
-  constructor() { }
+  settings() {
+    this.settingService.ethics = "toto";
+  }
+
+  constructor(private settingService: SettingsService) {
+
+  }
 }

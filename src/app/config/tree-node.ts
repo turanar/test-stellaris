@@ -23,14 +23,18 @@ export interface TreeNode {
   meta: any;
   children: number[];
 
+  disabled: boolean;
+
   getTree();
   getTreeConfig();
   getTreeNodeDb();
   lookupNode(nodeId: number);
   childAt(index:number);
   parent(): TreeNode;
-  hide();
+  hide(collapse_to_point?: boolean);
   show();
   collapse();
   expand();
+  toggleCollapse();
+  hideConnector();
 }

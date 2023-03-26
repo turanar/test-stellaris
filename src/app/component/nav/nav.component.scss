@@ -8,6 +8,10 @@
   font-family: 'Arimo', Verdana;
   font-size: 11pt;
 
+  .material-icons {
+    font-size: 15px;
+  }
+
   div.nav {
     padding-left: 15px;
     padding-right: 15px;
@@ -51,5 +55,9 @@
     height: 18px;
     vertical-align: middle;
     line-height: normal;
+  }
+
+  select {
+    font-family: 'Arimo', Verdana;
   }
 }

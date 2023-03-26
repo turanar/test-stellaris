@@ -7,7 +7,7 @@
 <ng-template #node let-tech let-item="item">
   <div id="{{ tech.key }}" [tippy]="tooltip" [data]="tech"
         [class.active]="tech.tier < 1 || tech.active"
-        [class.rare]="tech.is_rare" [class.dangerous]="tech.is_dangerous">
+        [class.rare]="tech.is_rare" [class.dangerous]="tech.is_dangerous" [class.disabled]="item.disabled">
 
     <div class="icon lozad" [attr.data-background-image]="'assets/img/' + tech.key +'.png'"></div>
     <p class="node-name" title="{{tech.name}}">{{tech.name}}</p>

@@ -1332,7 +1332,6 @@
     };
 
     TreeNode.prototype = {
-
         /**
          * @param {object} nodeStructure
          * @param {number} id

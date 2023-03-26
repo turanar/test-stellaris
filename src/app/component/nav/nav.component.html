@@ -1,5 +1,6 @@
 <nav class="menu">
   <div class="nav">
+    <a (click)="settings()"><span class="material-icons">settings</span></a>
     <a *ngFor="let opt of (areaOptions | keyvalue); let i = index"
        [class.selected]="selected == i" (click)="selected = i">
       <img src="assets/icons/{{ opt.value.icon }}"> {{ opt.value.label }}

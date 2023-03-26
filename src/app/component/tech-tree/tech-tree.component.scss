@@ -217,6 +217,10 @@ span.green {
   color: lawngreen;
 }
 
+.disabled {
+  filter: grayscale(1) opacity(.5);
+}
+
 span.red {
   color: red;
 }

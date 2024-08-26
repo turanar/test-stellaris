@@ -19,6 +19,7 @@ export interface Tech {
   children: any[];
   is_event: boolean;
   source: string;
+  dlc: string;
 
   is_gestalt: boolean;
   is_machine_empire: boolean;

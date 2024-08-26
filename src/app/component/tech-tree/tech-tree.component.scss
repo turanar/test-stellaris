@@ -10,6 +10,11 @@
 .Treant .collapsed .collapse-switch { background-color: #868DEE; }
 .Treant > .node img {	border: none; float: left; }
 
+.country_flag {
+  font-family: "Courier New", monospace;
+  color: cyan;
+ }
+
 .node {
   padding: 2px;
   border-radius: 3px;
@@ -21,6 +26,7 @@
   font-size: 12px;
   color: white;
   cursor: pointer;
+  -webkit-user-select: none;
 
   &.rare {
     background-image: url("^assets/css/tech_bg_rare.png") !important;
@@ -53,6 +59,12 @@
       background-color: #33230F;
     }
   }
+}
+
+div.break {
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
 }
 
 p.node-name {
@@ -92,18 +104,15 @@ p.node-desc {
 }
 
 div.node-status {
-  border: 1px solid #333;
-  margin: 1px;
-  position: inherit;
+  height: 45px;
+  width: 45px;
   float: right;
-  bottom: 0;
-  right: 0;
-  height: 21px;
-  width: 21px;
+  position: relative;
+  top: -30px;
 }
 
 .active div.node-status {
-  background-image: url("^assets/icons/yes.png");
+
 }
 
 span.society-research::before {
@@ -153,7 +162,7 @@ path {
 
   .tooltip-header {
     width: 100%;
-    color: #f59f17;
+    color: #84c6b0;
     font-weight: bold;
   }
 
@@ -195,9 +204,6 @@ path {
   .node {
     display: block !important;
     margin: 0 15px 15px 0;
-    .node-status {
-      display: none;
-    }
   }
 }
 
@@ -219,4 +225,16 @@ span.green {
 
 span.red {
   color: red;
+}
+
+span.cyan {
+  color: #21e8d0;
+}
+
+span.blue-green {
+  color: #3cd092;
+}
+
+span.orange {
+  color: orange;
 }

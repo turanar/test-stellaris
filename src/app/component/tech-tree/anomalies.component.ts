@@ -28,8 +28,19 @@ export class AnomaliesComponent extends TechTreeComponent implements OnInit, OnC
     }
   }
 
+  private createBreak(): void {
+    this.view.createEmbeddedView(this.break);
+  }
+
   private createViews(): void {
-    for(let ano of this.anomalies) this.createAnomaly({meta: ano});
+    for(let i = 0; i < this.anomalies.length; i++) {
+      let ano = this.anomalies[i];
+      this.createAnomaly({meta: ano});
+      if(i + 1 < this.anomalies.length) {
+        let anoTwo = this.anomalies[i + 1];
+        if(ano.dlc != anoTwo.dlc) this.createBreak();
+      }
+    }
     this.techService.observe();
   }
 

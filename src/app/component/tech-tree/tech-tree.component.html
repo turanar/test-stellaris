@@ -4,6 +4,10 @@
   </div>
 </div>
 
+<ng-template #break>
+  <div class="break"></div>
+</ng-template>
+
 <ng-template #node let-tech let-item="item">
   <div id="{{ tech.key }}" [tippy]="tooltip" [data]="tech"
         [class.active]="tech.tier < 1 || tech.active"
@@ -20,18 +24,11 @@
       <ng-container *ngIf="tech.tier > 0">
         Cost: <span class="{{tech.area}}-research">{{tech.cost}}, Weight: {{tech.base_weight}}</span>
       </ng-container>
+      <ng-container *ngIf="tech.tier == 0">&#160;</ng-container>
     </p>
-    <p class="node-desc">
-      <ng-template #ethic let-image="image" let-value="value">
-        <img src="assets/icons/{{value ? 'yes' : 'no'}}.png"><img src="assets/icons/{{image}}.png">
-      </ng-template>
-      <ng-container *ngFor="let civic of civics">
-        <ng-container *ngIf="civic.value(tech) !== undefined">
-          <ng-container *ngTemplateOutlet="ethic; context: {value: civic.value(tech), image: civic.image}"></ng-container>
-        </ng-container>
-      </ng-container>
-    </p>
-    <div class="node-status" (click)="toggleActivation($event, item)"></div>
+    <ng-container *ngIf="tech.dlc">
+      <div class="node-status" style="background-image: url('assets/img/dlc/{{ tech.dlc }}.png')"></div>
+    </ng-container>
   </div>
 </ng-template>
 
@@ -43,17 +40,17 @@
     </div>
 
     <ng-container *ngIf="tech.weight_modifiers.length > 0">
-      <div class="tooltip-header">Weight Modifiers</div>
+      <div class="tooltip-header" style="margin-top: 10px;">Weight Modifiers</div>
       <div class="tooltip-content"><pre [innerHTML]="tech.weight_modifiers.join('<br>')  | techText| safeHtml"></pre></div>
     </ng-container>
 
     <ng-container *ngIf="tech.potential.length > 0">
-      <div class="tooltip-header">Requirements</div>
+      <div class="tooltip-header" style="margin-top: 10px;">Requirements</div>
       <div class="tooltip-content"><pre [innerHTML]="tech.potential.join('<br/>')  | techText| safeHtml"></pre></div>
     </ng-container>
 
     <ng-container *ngIf="tech.prerequisites.length > 1">
-      <div class="tooltip-header">Required Technologies</div>
+      <div class="tooltip-header" style="margin-top: 10px;">Required Technologies</div>
       <div class="tooltip-content prerequisites">
         <img *ngFor="let req of tech.prerequisites" class="left {{req | techArea}}" height="52" width="52" src="assets/img/{{req}}.png">
         <div class="left">
@@ -65,7 +62,7 @@
     </ng-container>
 
     <ng-container *ngIf="tech.feature_unlocks.length > 0">
-      <div class="tooltip-header">Research Effects</div>
+      <div class="tooltip-header" style="margin-top: 10px;">Research Effects</div>
       <div class="tooltip-content" [innerHTML]="tech.feature_unlocks.join('<br/>') | techText| safeHtml"></div>
     </ng-container>
   </div>

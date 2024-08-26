@@ -9,7 +9,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class AppComponent implements OnInit {
   title = 'stellaris';
-  private _version: string = 'orion-3.6.0';
+  private _version: string = 'andromeda-3.12.0';
   get version(): string {
     return this._version;
   }
@@ -24,8 +24,9 @@ export class AppComponent implements OnInit {
   selected: number = 0;
 
   versions: any = {
-    'orion-3.6.0' :   {route: 'orion-3.6.0',    title: 'Stellaris 3.6.0 (Orion)'},
-    'fornax-3.5.3' :  {route: 'fornax-3.5.3',   title: 'Stellaris 3.5.3 (Fornax)'},
+    'andromeda-3.12.0' :   {route: 'andromeda-3.12.0',    title: 'Stellaris 3.12.0 (Andromeda)'},
+    'orion-3.6.0' :        {route: 'orion-3.6.0',    title: 'Stellaris 3.6.0 (Orion)'},
+    'fornax-3.5.3' :       {route: 'fornax-3.5.3',   title: 'Stellaris 3.5.3 (Fornax)'},
     'cepheus-3.4.3' : {route: 'cepheus-3.4.3',  title: 'Stellaris 3.4.3 (Cepheus)'},
     'herbert-3.2.2' : {route: 'herbert-3.2.2',  title: 'Stellaris 3.2.2 (Herbert)'},
     'lem-3.1.1' :     {route: 'lem-3.1.1',      title: 'Stellaris 3.1.1 (Lem)'},

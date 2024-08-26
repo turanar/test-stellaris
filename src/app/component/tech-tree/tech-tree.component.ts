@@ -30,6 +30,8 @@ declare var $: any;
 })
 export class TechTreeComponent implements OnInit, OnChanges {
   @ViewChild('node') public node: TemplateRef<any>;
+  @ViewChild('break') public break: TemplateRef<any>;
+
   @ViewChild('container', {read: ViewContainerRef}) view: ViewContainerRef
   @ViewChild('parent') container: ElementRef;
 
